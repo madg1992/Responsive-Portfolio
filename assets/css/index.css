@@ -1,0 +1,137 @@
+/*portfolio css*/
+.container { 
+	width: 960px;
+	/*margin 0 top and auto for left and right*/
+	margin: 0 auto; 
+	background: #ffffff;
+}
+
+body{
+	background-image: url("../images/escheresque_ste_@2X.png");
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#name {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #ffffff;
+}
+
+li {
+  float: left;
+  padding: 0px 5px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e09b46;
+}
+
+.active {
+	background: #4aaaa5;
+	font-size: 40px;
+	/*margin-left: 10px;*/
+}
+
+.menu {
+	float: right;
+}
+
+article	{
+	width: 900px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 40px;
+	color: #4aaaa5;
+	padding-top: 30px;
+}
+
+img {
+	width: 20%;
+	height: auto;
+	float: left;
+	margin-right: 15px; 
+}
+
+p {
+	line-height: 2;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	/*color: #ffffff;*/
+}
+
+
+.footer {
+  position: static;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  border-top: 8px solid #4aaaa5;
+  margin-top: 50px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+.container { 
+	width: 700px;
+	/*margin 0 top and auto for left and right*/
+	margin: 0 auto; 
+	}
+
+article	{
+	width: 700px;
+	margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+/*navigation bar display adjustment*/
+
+nav li {
+	display: inline;
+}
+nav a {
+	display: inline-block;
+	padding: 1em;
+	text-decoration: none;
+}
+
+/* change the width of the container when screen is <=640px*/
+.container { 
+	width: 570px;
+	/*margin 0 top and auto for left and right*/
+	margin: 0 auto; 
+	}
+
+article	{
+	width: 570px;
+	margin: 0 auto;
+}
+}
+
+/* Media Queries End*/
+
+
+
+
+

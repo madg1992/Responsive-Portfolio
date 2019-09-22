@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container { 
+      width: 960px;
+      /*margin 0 top and auto for left and right*/
+      margin: 0 auto; 
+      background: #ffffff;
+  }
+  
+  body{
+      background-image: url("../images/escheresque_ste_@2X.png");
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #name {
+      font-family: 'Georgia', Times, Times New Roman, serif;
+      color: #ffffff;
+  }
+  
+  li {
+    float: left;
+    padding: 0px 5px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #e09b46;
+  }
+  
+  .active {
+      background: #4aaaa5;
+      font-size: 40px;
+      /*margin-left: 10px;*/
+  }
+  
+  .menu {
+      float: right;
+  }
+  
+   .container2 {
+    /*increases the padding around everything contained within the div
+    so that the labels and input boxes are not edge to edge*/
+    padding: 20px;
+    /*adjusts the allowable width of the container to match the width
+    of the navbar*/
+    width: 960px; 
+    /*adds space between navbar and container2, auto centers the container left and right*/
+    margin: 35px auto 0px;
+    /*changes the background color of container2 to light grey*/
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 40px;
+    color: #4aaaa5;
+    padding-top: 20px;
+  }
+  
+  div.description {
+    font-family: American Typewriter, serif;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .gallery {
+    position: relative;
+    /* Make the width of box same as image */
+    display: inline-block;
+  }
+  
+  .gallery .description {
+    position: absolute;
+    /* The z-index property specifies the stack order of an element.
+    An element with greater stack order is always in front of an element with a lower stack order. */
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    /* You cab adjust this value to move the positioned div up and down */
+    top: 70%;
+    text-align: center;
+    /* This sets the width of the positioned div */
+    width: 100%;
+    background: #4aaaa5;
+  
+  }
+
+  /* mouse over link */
+a:hover {
+    color: rgb(212, 224, 38);
+  }
+
+/* selected link */
+a:active {
+    color: rgb(15, 15, 248);
+  }
+
+  .footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    margin-top: 50px;
+  }
+  
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+/*navigation bar display adjustment*/
+
+nav li {
+  display: inline;
+}
+nav a {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+/* changes the width of the entire page*/
+* {
+  width: 700px;
+  /*margin 0 top and auto for left and right*/
+  margin: 0 auto; 
+}
+
+@media screen and (max-width: 640px) {
+
+/*navigation bar display adjustment*/
+
+nav li {
+  display: inline;
+}
+nav a {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+/* changes the width of the entire page*/
+* {
+  width: 570px;
+  margin: 0 auto;
+}
+
+.gallery {
+  width: 100%;
+  display: block;
+}
+}
+  
+  
+  

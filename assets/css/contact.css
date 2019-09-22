@@ -1,0 +1,188 @@
+/*css for contact section*/
+
+* {
+	box-sizing: border-box;
+}
+
+.container { 
+	width: 960px;
+	/*margin 0 top and auto for left and right*/
+	margin: 0 auto; 
+	background: #ffffff;
+}
+
+body{
+	background-image: url("../images/escheresque_ste_@2X.png");
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#name {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #ffffff;
+}
+
+li {
+  float: left;
+  padding: 0px 5px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e09b46;
+}
+
+.active {
+	background: #4aaaa5;
+	font-size: 40px;
+	/*this indents the name 10px from the left*/
+	/*margin-left: 10px;*/
+}
+
+.menu {
+	float: right;
+}
+
+/*THIS IS WHERE TH NAVBAR ENDS*/
+
+label, input {
+	display: block;
+}
+
+.container2 {
+	/*increases the padding around everything contained within the div
+	so that the labels and input boxes are not edge to edge*/
+	padding: 20px;
+	/*adjusts the allowable width of the container to match the width
+	of the navbar*/
+	width: 960px; 
+	/*adds space between navbar and container2, auto centers the container left and right*/
+	margin: 35px auto 0px;
+	/*changes the background color of container2 to light grey*/
+	background-color: #f2f2f2;
+}
+
+h1 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 40px;
+    color: #4aaaa5;
+}
+
+hr {
+	margin-bottom: 20px;
+}
+
+label, input {
+font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input[type=text], textarea {
+	/*this tells the input box to take 100% allowable width*/
+	width: 100%;
+	/*padding increased to make input box appear taller*/
+	padding: 12px;
+	border: 1px solid #ccc;
+	/*this increases the space between the input box and the above label*/
+	margin-top: 6px;
+	/*this increases the space between the input box and the label beneath it*/
+	margin-bottom: 16px;
+	/*this allows the message input box to be resized only vertically*/
+	resize: vertical;
+}
+
+/*this adds detailing to the submit button*/
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*when the submit button is hovered over, its color changes*/
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  border-top: 8px solid #4aaaa5;
+  margin-top: 50px;
+}
+
+/* Media Queries*/
+@media screen and (max-width: 768px) {
+
+.container { 
+	width: 700px;
+	/*margin 0 top and auto for left and right*/
+	margin: 0 auto; 
+	}
+
+.container2 {
+	width: 700px;
+	/*margin 0 top and auto for left and right*/
+	margin: 0 auto; 
+	}
+
+form	{
+	width: 700px;
+	margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+/*navigation bar display adjustment*/
+
+nav li {
+	display: inline;
+}
+nav a {
+	display: inline-block;
+	padding: 1em;
+	text-decoration: none;
+}
+
+/*containers size adjustment*/
+
+.container { 
+	width: 570px;
+	/*margin 0 top and auto for left and right*/
+	margin: 0 auto; 
+	}
+
+.container2 {
+	width: 570px;
+	/*margin 0 top and auto for left and right*/
+	margin: 0 auto; 
+	}
+}
+
+form {
+	width: 570px;
+	margin: 0 auto;
+}
+}
+
+/* Media Queries End*/
